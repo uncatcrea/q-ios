@@ -1,0 +1,20 @@
+<!--
+ * Content is enclosed in <div id="slideup-panel"><div id="app-screen"></div></div>
+ * Custom post date: getCustomDate() added in functions.js as a template's parameter
+ -->
+
+<div id="content" class="comments-template">
+	
+	<% if(comments.length){ %>
+		  	<% _.each( comments, function( comment ){ %>
+                <div class="comment-item" style="padding-left:<% print((comment.depth-1)*20) %>px">
+                    <h2 class="comment-header">
+                        <span class="by light-text <% comment.depth > 1 ? print('reply-icon') : print('') %>">By</span><span class="comment-author"><%= comment.author %></span>
+                        <span class="comment-date light-text"><%= getCustomDate(comment.date) %></span>
+                    </h2>
+                    <div class="comment-content"><%= comment.content %></div>
+				</div>
+			<% }) %>
+	<% } %>
+
+</div>
