@@ -142,8 +142,6 @@ define([
     // @desc Archive to single animation
 	transition_slide_next_screen = function ( $wrapper, $current, $next, current_screen, next_screen, $deferred ) {
 
-        var nextScreenObject = App.getCurrentScreenObject();
-        
         $wrapper.append($next); // Add the next screen to the DOM / Mandatory first action (notably to get scrollTop() working)
 
         // When transitioning from a list, memorize the scroll position in local storage to be able to find it when we return to the list
@@ -297,8 +295,6 @@ define([
     // @param {object} current_screen - Screen types: list|single|page|comments
     // @param view
     App.on('screen:showed',function(current_screen,view){
-
-        var currentScreenObject = App.getCurrentScreenObject();
 
         /*
          * 1. Back button

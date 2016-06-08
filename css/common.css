@@ -2,7 +2,6 @@
  * common.css : general rules (applied to all templates)
  * post-list.css : archive.html specific rules
  * post-detail.css : single.html and page.html specific rules
- * post-comments.css : comments.html specific rules
  */
 
 
@@ -267,7 +266,7 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 101%; /* trigger a scroll for pull to refresh */
+    height: 100%;
     width: 100%;
     z-index: 1; /* z-index relative to .app-screen */
     background-color: #fff;
