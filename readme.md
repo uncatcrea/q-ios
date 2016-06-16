@@ -17,7 +17,7 @@ Copyright: 2016 Uncategorized Creations
 
 [![Q for iOS screencast](https://cloud.githubusercontent.com/assets/6179747/16109069/3ce3516c-33a7-11e6-8b90-507d661a3ffc.png)](https://www.youtube.com/watch?v=jkjtkH6wDys)
 
-You might want to check Q for Android, another fine theme for WP-AppKit: [Q for Android](https://github.com/uncatcrea/q-android)
+You might want to check **Q for Android**, another fine theme for WP-AppKit: [Q for Android](https://github.com/uncatcrea/q-android)
 
 # Installation
 
@@ -27,7 +27,7 @@ You might want to check Q for Android, another fine theme for WP-AppKit: [Q for 
 * Install WP-AppKit as you would do for any other WordPress plugins (ie. drop the plugin folder in */wp-content/plugins*)
 * Activate WP-AppKit using the _Plugins_ WordPress admin panel. (Browse the *Installed Plugins* list and click the *Activate* link of WP-AppKit.)
 * Now you should have a brand new */wp-content/themes-wp-appkit* folder (yes, this is where app themes are stored)
-* Download the Q for iOS from this repository and drop its folder in */wp-content/themes-wp-appkit*
+* Download the Q for iOS from [https://github.com/uncatcrea/q-ios/releases](this repository) and drop its folder in */wp-content/themes-wp-appkit*
 * In WordPress, use the *WP-AppKit* admin panel to create a new app and choose one of the themes in the *Appearance* box
 * From there you're free to test in your browser (using the Chrome's Emulation Mode) or directly try to compile
 
