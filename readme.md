@@ -15,7 +15,7 @@ Copyright: 2016 Uncategorized Creations
 
 **Please note that beginning with WP-AppKit 0.6, Q for iOS is pre-installed on plugin activation as the default theme for iOS applications.**
 
-<div style="text-align:center"><a href="https://www.youtube.com/watch?v=jkjtkH6wDys"><img src ="https://cloud.githubusercontent.com/assets/6179747/16109069/3ce3516c-33a7-11e6-8b90-507d661a3ffc.png" /></a></div>
+<center><a href="https://www.youtube.com/watch?v=jkjtkH6wDys"><img src ="https://cloud.githubusercontent.com/assets/6179747/16109069/3ce3516c-33a7-11e6-8b90-507d661a3ffc.png" /></a></center>
 
 [![Q for iOS screencast](https://cloud.githubusercontent.com/assets/6179747/16109069/3ce3516c-33a7-11e6-8b90-507d661a3ffc.png)](https://www.youtube.com/watch?v=jkjtkH6wDys)
 
