@@ -676,7 +676,10 @@ define([
         // Modify embedded tweets code for proper display
         // Note: it is not possible to style embedded tweet in apps as Twitter doesn't identify the referer
         $(".single-template blockquote.twitter-tweet p").css( "display", "inline-block" );
-	
+
+        // Set content for unavailable content notification
+        // Note: unavaible content is notified with [hide_from_apps notify="yes"] shortcode
+        $(".wpak-content-not-available").html('Content unavailable');	
     }
     
     // @desc Hyperlinks click handler
