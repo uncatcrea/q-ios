@@ -36,7 +36,7 @@ define([
     App.setParam( 'go-to-default-route-after-refresh', false ); // Don't automatically show default screen after a refresh
     App.setParam( 'custom-screen-rendering', true ); // Don't use default transitions and displays for screens
 
-    Languages.setPreferredLanguage('fr-FR');
+    Languages.setPreferredLanguage('fr-FRd');
     
     /*
      * Init
