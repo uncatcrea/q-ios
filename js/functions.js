@@ -27,7 +27,17 @@ define([
     'theme/js/jquery.fitvids'
     ], function($,App,Storage,TemplateTags,Config,Moment,Velocity) {
 
-    
+	/*
+	 * Theme's parameters
+	 */
+
+	/**
+	 * @desc Overriding Theme's parameters in the following javascript Object allows you to customize various Theme parameters
+	 * in one unique location
+	*/
+
+	var Theme = {
+		OffCanvasMenu_LeftOffset : "60%" };
     
     /*
      * App's parameters
@@ -488,7 +498,7 @@ define([
 		$("#menu-items").css("display","block");
         
         $("#app-canvas").velocity({
-			left:"85%",
+			left: Theme.OffCanvasMenu_LeftOffset,
         }, {
             duration: 300,
             complete: function() {
