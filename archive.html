@@ -35,13 +35,13 @@
 
         <% if( TemplateTags.displayGetMoreLink() ){ %>
 			<div class="get-more-button-wrapper">
-                <button type="button" id="get-more-button" class="get-more-button"><%= __('more_button_label') %> (<%= TemplateTags.getMoreLinkNbLeft() %>)</button>
+                <button type="button" id="get-more-button" class="get-more-button">More (<%= TemplateTags.getMoreLinkNbLeft() %>)</button>
             
             </div>
 		<% } %>
             
 	<% }else{ %>
-		<div class='content-message'><%= __('no_post_found_message') %></div>
+		<div class='content-message'>No post found</div>
 	<% } %>
         
 </div>

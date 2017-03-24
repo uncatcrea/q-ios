@@ -12,7 +12,6 @@
  * (AMD) Local Storage   available as    Storage
  * (AMD) Template Tags   available as    TemplateTags
  * (AMD) App Config      available as    Config
- * (AMD) App Strings     available as    Strings
  * (AMD) Moment 2.10.6   available as    Moment (http://momentjs.com/)
  * (AMD) Velocity 1.2.3  available as    Velocity (but used with jQuery) (http://julian.com/research/velocity/)
  *       FitVids (https://github.com/davatron5000/FitVids.js)
@@ -23,11 +22,12 @@ define([
     'core/modules/storage',
     'core/theme-tpl-tags',
     'root/config',
-    'theme/js/languages',
     'theme/js/moment.min',
     'theme/js/velocity.min',
     'theme/js/jquery.fitvids'
-    ], function( $, App, Storage, TemplateTags, Config, Languages, Moment, Velocity ) {
+    ], function($,App,Storage,TemplateTags,Config,Moment,Velocity) {
+
+    
     
     /*
      * App's parameters
@@ -36,7 +36,7 @@ define([
     App.setParam( 'go-to-default-route-after-refresh', false ); // Don't automatically show default screen after a refresh
     App.setParam( 'custom-screen-rendering', true ); // Don't use default transitions and displays for screens
 
-    Languages.setPreferredLanguage('fr-FR');
+    
     
     /*
      * Init
@@ -97,10 +97,6 @@ define([
                 return customPostDate;
             }
             
-        }
-        
-        template_args.__ = function( string ) {
-            return Languages.__( string );
         }
         
         // Return parameters and functions
@@ -279,7 +275,7 @@ define([
          * @todo messages should be centralized to ease translations
          */
 		if ( result.ok ) {
-			showMessage(Languages.__('successful_content_update_message'));
+			showMessage("Content updated successfully");
 		}else{
 			showMessage(result.message);
 		}
@@ -350,11 +346,8 @@ define([
             
             // Change nav bar title
             // Todo: create a generic function
-            
-            var headerTitle = Languages.__('article_header_title');
-            
-            if ( $('#app-header > h1').html() != headerTitle ) {
-                $('#app-header > h1').html( headerTitle );
+            if ( $('#app-header > h1').html() != 'Article' ) {
+                $('#app-header > h1').html('Article');
             }
 
         }
@@ -685,8 +678,8 @@ define([
         $(".single-template blockquote.twitter-tweet p").css( "display", "inline-block" );
 
         // Set content for unavailable content notification
-        // Note: unavailable content is notified with [hide_from_apps notify="yes"] shortcode
-        $(".wpak-content-not-available").html( Languages.__('unavailable_content_shortcode_message') );	
+        // Note: unavaible content is notified with [hide_from_apps notify="yes"] shortcode
+        $(".wpak-content-not-available").html('Content unavailable');	
     }
     
     // @desc Hyperlinks click handler
