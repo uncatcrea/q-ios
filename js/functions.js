@@ -76,7 +76,7 @@ define([
             // Relies on MomentJS available as Moment()
             template_args.getCustomDate = function(postDate) {
 
-                var gmtOffSetSec = Config.gmt_offset * 3600; // Get GMT offset as defined in config.js
+                var gmtOffSetSec = TemplateTags.getGmtOffset() * 3600; // Get GMT offset as defined in config.js
                 
                 var momentNow = Moment(); // Get current date and time
                 
