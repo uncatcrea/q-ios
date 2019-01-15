@@ -11,6 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 Copyright: 2016 Uncategorized Creations	
 -->
 
+**⚠️ Important Note, please read: beginning with version 1.5.3 of WP-AppKit, we won't support anymore iOS.** Q for iOS will still be shipped with WP-AppKit, but we won't be able to test any iOS features. More about this tough decisision here: https://uncategorized-creations.com/4550/dropping-ios-support-%F0%9F%98%B1/.
+
 **Q for iOS** is a demo theme for mobile apps built with WP-AppKit, a WordPress plugin to create mobile apps connected to WordPress (more on that at http://getwpappkit.com).
 
 **Please note that beginning with WP-AppKit 0.6, Q for iOS is pre-installed on plugin activation as the default theme for iOS applications.**
